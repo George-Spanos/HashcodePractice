@@ -1,7 +1,7 @@
 class Pizza:
     def __init__(self, Id, ingredients_length, ingredients):
         self.Id = Id
-        self.ingredients = ingredients
+        self.ingredients = ingredients.sort()
         self.sent = False
         self.ingredients_lenth = ingredients_length
 

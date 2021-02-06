@@ -1,0 +1,20 @@
+Create a metric that's called similarity_level
+Each pizzas similarity level is the sum of the occurencies of each of its ingredients, excluding self
+Pizzas with the lowest similarity levels go to the largest teams, with the fewest pizzas added
+example
+
+0- onion pepper olive - SL: 1
+1- mushroom tomato basil - SL: 5
+2- chicken mushroom pepper - SL:4
+3- tomato mushroom basil- SL:5
+4- chicken basil - SL: 3
+
+solution
+
+2
+2 1 4 SL SUM 8 SCORE = 16
+3 0 2 3 SL SUM 10 SCORE= 49
+
+2 
+2 
+3  
