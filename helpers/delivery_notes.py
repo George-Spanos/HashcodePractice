@@ -1,6 +1,8 @@
-class Delivery_Combination:
+class Delivery_Notes:
     def __init__(self):
-        self.two_person_teams = 0
-        self.three_person_teams = 0
-        self.four_person_teams = 0
-    
+        self.total_deliveries = 0
+        self.teams = []
+
+    def add_team(self, team):
+        self.teams.append(team)
+        self.total_deliveries += 1

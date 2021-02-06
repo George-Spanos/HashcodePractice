@@ -1,9 +1,10 @@
 class Pizza:
     def __init__(self, Id, ingredients_length, ingredients):
         self.Id = Id
-        self.ingredients = ingredients.sort()
+        self.ingredients = ingredients
+        self.ingredients.sort()
         self.sent = False
-        self.ingredients_lenth = ingredients_length
+        self.ingredients_lenth = int(ingredients_length)
 
     def send_pizza(self):
         self.sent = True
