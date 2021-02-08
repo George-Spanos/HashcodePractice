@@ -23,7 +23,8 @@ for noOfMembers in first_combination:
 for pizza_id in pizzas_sl.keys():
     pizza = [pizza for pizza in pizzas if pizza.Id == pizza_id][0]
     delivery_notes.add_pizza(pizza)
-print(delivery_notes.total_score())
+delivery_notes.calc_total_score()
+print(delivery_notes.total_score)
 file = open("res.txt", "w")
 file.write(f"{delivery_notes.total_deliveries}\n")
 for team in delivery_notes.teams:

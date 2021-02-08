@@ -2,6 +2,7 @@ class Delivery_Notes:
     def __init__(self):
         self.total_deliveries = 0
         self.teams = []
+        self.total_score = 0
 
     def add_team(self, team):
         self.teams.append(team)
@@ -20,8 +21,8 @@ class Delivery_Notes:
                               key=lambda team: team.members, reverse=True)
         return largest_team[0]
 
-    def total_score(self):
+    def calc_total_score(self):
         score = 0
         for team in self.teams:
             score += team.get_unique_ingredients_length() ** 2
-        return score
+        self.total_score = score
