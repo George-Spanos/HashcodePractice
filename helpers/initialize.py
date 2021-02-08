@@ -3,7 +3,7 @@ from entities.team import Team
 
 
 def initialize():
-    input = open("a_example.txt", "r")
+    input = open("b_example.txt", "r")
     text = input.read()
     input.close()
 
